@@ -1,0 +1,48 @@
+﻿@model IEnumerable<EmployeeDetails.Models.Class1>  
+
+@{
+    Layout = null;
+}
+
+<style>
+
+    table {
+        font - family: arial, sans - serif;
+        border - collapse: collapse;
+        width: 100 %;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text - align: left;
+        padding: 8px;
+    }
+</style>
+
+<h3>Employees Information</h3>
+
+<table>
+
+    <tr>
+        <th>Employee_Name</th>
+        <th>Email_Id</th>
+        <th>Emp_password</th>
+       
+    </tr>
+    @if (Model != null)
+    {
+
+    foreach (var i in Model)
+    {
+        <tr>
+            <td>@i.Employee_Name</td>
+            <td>@i.Email_Id</td>
+            <td>@i.Emp_password</td>
+           
+        </tr>
+    }
+    }
+
+</table>
+
+

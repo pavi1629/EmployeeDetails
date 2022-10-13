@@ -1,0 +1,32 @@
+﻿@model EmployeeDetails.Models.Class1
+
+@{
+    Layout = null;
+    ViewBag.Title = "EmployeeLoginpage";
+
+}
+
+
+@using (Html.BeginForm("EmployeeSuccesspage", "Employee", FormMethod.Post))
+{
+    <h2>EmployeeLoginpage</h2>
+    <label>EmployeeName</label>
+    @Html.TextBoxFor(emp => emp.Employee_Name)
+    <br />
+
+    <label>Email_Id</label>
+    @Html.TextBoxFor(emp => emp.Email_Id)
+    <br />
+
+    <br />
+
+    <label>Emp_Password</label>
+    @Html.PasswordFor(emp => emp.Emp_password)
+    <br />
+    <button>login</button>
+
+
+
+}
+
+
