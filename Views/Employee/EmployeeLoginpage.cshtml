@@ -9,12 +9,13 @@
 
 @using (Html.BeginForm("EmployeeSuccesspage", "Employee", FormMethod.Post))
 {
-    <h2>EmployeeLoginpage</h2>
+    <h2>Employee Loginpage</h2>
     <label>EmployeeName</label>
     @Html.TextBoxFor(emp => emp.Employee_Name)
     <br />
+    <br/>
 
-    <label>Email_Id</label>
+    <label>Email_Id &emsp;&emsp;&nbsp;</label>
     @Html.TextBoxFor(emp => emp.Email_Id)
     <br />
 
@@ -23,7 +24,7 @@
     <label>Emp_Password</label>
     @Html.PasswordFor(emp => emp.Emp_password)
     <br />
-    <button>login</button>
+    <button style="border-radius:24px;">login</button>
 
 
 

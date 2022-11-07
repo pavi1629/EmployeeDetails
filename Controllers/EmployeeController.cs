@@ -20,7 +20,7 @@ namespace EmployeeDetails.Controllers
             public ActionResult EmployeeLoginpage()
             {
             return View();
-        }
+            }
             public ActionResult EmployeeSuccesspage(Class1 user)
             {
             if (user.Employee_Name == "pavi" && user.Emp_password == 123 && user.Email_Id =="Pavi@gmail.com")
@@ -32,10 +32,10 @@ namespace EmployeeDetails.Controllers
             }
             else
             {
-                ViewBag.Emplo = "Enter correct Employee_Name and Emp_password ";
+                ViewBag.Emplo = "Enter correct Employeename and Employeepassword ";
             }
             return View();
-                    }
+        }
         public ActionResult EmployeeData()
         {      
                 List<Class1> ab = new List<Class1>();
